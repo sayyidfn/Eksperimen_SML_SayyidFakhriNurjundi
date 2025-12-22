@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.10"
 
       - name: Install dependencies
         run: |
@@ -33,6 +33,6 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          git add preprocessing/synthetic_employee_burnout_preprocessed
+          git add preprocessing/synthetic_employee_burnout_preprocessing
           git commit -m "Automated preprocessing dataset update" || echo "No changes to commit"
           git push
